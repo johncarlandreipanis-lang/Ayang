@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            color: #d63384;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        #message {
+            display: none;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 300px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will You Be My Valentine?</h1>
+    <p>Click the button to find out what I have to say...</p>
+    <button onclick="revealMessage()">Click Me!</button>
+    <div id="message">
+        <p>Of course, I love you! Happy Valentine's Day! ❤️</p>
+        <img src="https://via.placeholder.com/300x200/ff69b4/ffffff?text=Love+You" alt="Hearts">
+    </div>
+
+    <script>
+        function revealMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
